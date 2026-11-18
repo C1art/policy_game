@@ -103,6 +103,7 @@ Follow [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.
 - Types: `feat`, `fix`, `refactor`, `perf`, `test`, `docs`, `build`, `ci`, `chore`, `style`
 - Scope is the top-level folder: `feat(core): add budget resource`, `docs(design): define approval rating`
 - Breaking changes: `!` after the scope and a `BREAKING CHANGE:` footer
+- Branches: `main` ← `dev` ← `<type>/<name>` (e.g. `feat/budget`). Branch from `dev` and merge finished work back into `dev`. Never merge `dev` into `main` unless explicitly told to.
 - Commit sparingly: one commit per complete, verified unit of work, not per edit. Never commit work in progress or failing checks.
 - Push rarely: only when a task or feature is finished, or when asked. Batch commits locally first; never push after every commit.
 
