@@ -38,6 +38,7 @@ Godot is invoked as `godot` on PATH.
 - Single test file: add `-gselect=test_bar.gd`
 - Lint: `gdlint core scenes ui autoload tests`
 - Format: `gdformat core scenes ui autoload tests`
+- Linux setup (cloud sessions): `sh docs/setup/install_linux.sh`
 
 ## Verification
 
@@ -45,7 +46,7 @@ After every change, in this order:
 
 1. Format
 2. Lint
-3. Import / check scripts (no errors or warnings)
+3. Import / check scripts (no errors or warnings; ignore the language server's `ERROR: Condition "!thread.is_started()"`, which is engine noise)
 4. Tests for what changed (whole suite before committing)
 
 ## Architecture rules
